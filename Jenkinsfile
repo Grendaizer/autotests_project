@@ -1,6 +1,13 @@
 pipeline {
     agent any
 
+    environment {
+        BOT_TOKEN = credentials('BOT_TOKEN')  // Беремо з Jenkins
+        CHAT_IDS = credentials('CHAT_IDS')
+        HEADLESS = "${HEADLESS}"
+        DEBUG = "${DEBUG}"
+    }
+
     stages {
         stage('Checkout') {
             steps {
