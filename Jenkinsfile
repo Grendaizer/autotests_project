@@ -20,8 +20,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 bat '''
-                call venv\\Scripts\\activate
-                python run_tests.py
+                venv\\Scripts\\python.exe run_tests.py
                 '''
             }
         }
