@@ -10,10 +10,10 @@ pipeline {
         stage('Setup Python & venv') {
             steps {
                 bat '''
-                python -m venv venv
+                C:\\Users\\alexe\\AppData\\Local\\Programs\\Python\\Python39\\python.exe -m venv venv
                 call venv\\Scripts\\activate
-                pip install --upgrade pip
-                pip install -r requirements.txt
+                C:\\Users\\alexe\\AppData\\Local\\Programs\\Python\\Python39\\python.exe -m pip install --upgrade pip
+                C:\\Users\\alexe\\AppData\\Local\\Programs\\Python\\Python39\\python.exe -m pip install -r requirements.txt
                 '''
             }
         }
