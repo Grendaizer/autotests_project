@@ -12,8 +12,8 @@ pipeline {
                 bat '''
                 C:\\Users\\alexe\\AppData\\Local\\Programs\\Python\\Python39\\python.exe -m venv venv
                 call venv\\Scripts\\activate
-                C:\\Users\\alexe\\AppData\\Local\\Programs\\Python\\Python39\\python.exe -m pip install --upgrade pip
-                C:\\Users\\alexe\\AppData\\Local\\Programs\\Python\\Python39\\python.exe -m pip install -r requirements.txt
+                venv\\Scripts\\python.exe -m pip install --upgrade pip
+                venv\\Scripts\\python.exe -m pip install -r requirements.txt
                 '''
             }
         }
@@ -24,6 +24,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Generate Allure Report') {
             steps {
                 bat '''
