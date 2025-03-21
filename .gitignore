@@ -1,0 +1,30 @@
+# 🐍 Python файли кешу
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🔥 Віртуальне середовище (venv)
+venv/
+env/
+.venv/
+
+# 🛠 PyTest кеш
+.pytest_cache/
+
+# 📊 Allure репорти та результати
+allure-results/
+allure-report/
+allure-report.zip
+
+# 📜 Логи та тимчасові файли
+logs/
+*.log
+
+# 🏗 IDE файли (PyCharm, VSCode, etc.)
+.idea/
+.vscode/
+
+# 📦 Архіви та зайві файли
+*.zip
+*.tar.gz
